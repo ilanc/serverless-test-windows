@@ -1,9 +1,8 @@
 # Serverless on windows
 
 ### 1. executable permissions inside .serverless/{package}.zip
-* initially it appeared that any serverless deployments on windows would not set +x permission for bundled linux
+* initially it appeared that any serverless deployments on windows would not set +x permission for bundled linux binaries
 	* see original serverless issue [here](https://github.com/serverless/serverless/issues/3557)
-binaries
 * on investigation it appears:
 	* [wsl](https://msdn.microsoft.com/en-us/commandline/wsl/about) sets permissions to rwxrwxrwx (i.e. 777)
 		* see `.\.serverless.wsl.nopermissions\hello.zip`
