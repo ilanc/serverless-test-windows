@@ -1,0 +1,15 @@
+{
+  "name": "test-serverless-permissions",
+  "version": "1.0.0",
+  "description": "test app to demo whether --permissions is working",
+  "main": "handler.js",
+  "scripts": {
+    "package": "serverless package -v",
+    "package-permissions": "serverless package -v --permissions 700"
+  },
+  "author": "ilan@netreturn.co.za",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "github:ilanc/serverless"
+  }
+}
